@@ -13,7 +13,7 @@ The purpose of this analysis is to use a deep learning model to find whether an 
 ### Compiling, Training, and Evaluating the Model
 * Initially, I chose to have two hidden layers with 80 neurons in the first layer and 30 neurons in the second layer. Both had a ReLu activation function, with the output layer having a Sigmoid activation function. ReLu activation functions are good for looking at positive nonlinear data for classification, which suits this data. The Sigmoid activation function works for binary classification, which again suits the data - we only want to know whether it will be successful or not.
 * I was not able to achieve the target model performance - hovering just around 72%, 75% was just barely unreachable to me.
-* In order to increase model performance, I binned the INCOME_AMT variable, creating a new category for incomes above 5 million (as opposed to 5M-10M, 10M-50M, and 50M+), upped the neurons in the second layer to 40, added a third hidden layer with 20 neurons, and doubled the number of epochs to reach 200. This did not substantially change model performance, and possibly made the model more prone to overfitting.
+* In order to increase model performance, I binned the INCOME_AMT variable, creating a new category for incomes above 5 million (as opposed to 5M-10M, 10M-50M, and 50M+), upped the neurons in the second layer to 40, added a third hidden layer with 20 neurons, and doubled the number of epochs to reach 200. This did not substantially change model performance.
 
 ### Inital Model Performance
 ![Performance](Images/Performance.png)
